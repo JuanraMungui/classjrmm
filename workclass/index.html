@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Criptografía Post-Cuántica</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar is-dark is-fixed-top">
+
+<div class="container">
+
+<div class="navbar-brand">
+<a class="navbar-item">
+<strong>PQC</strong>
+</a>
+
+<a role="button"
+class="navbar-burger"
+data-target="menu">
+<span></span>
+<span></span>
+<span></span>
+</a>
+
+</div>
+
+<div id="menu" class="navbar-menu">
+
+<div class="navbar-end">
+
+<a href="#inicio" class="navbar-item">Inicio</a>
+
+<a href="#concepto" class="navbar-item">Concepto</a>
+
+<a href="#algoritmos" class="navbar-item">Algoritmos</a>
+
+<a href="#historia" class="navbar-item">Historia</a>
+
+<a href="#fuentes" class="navbar-item">Fuentes</a>
+
+<div class="navbar-item">
+<button class="button is-warning"
+onclick="toggleTheme()">
+
+<i class="fas fa-moon"></i>
+
+</button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="inicio" class="hero is-fullheight hero-bg">
+
+<div class="hero-body">
+
+<div class="container has-text-centered">
+
+<h1 class="title is-1 has-text-white">
+Criptografía Post-Cuántica
+</h1>
+
+<h2 class="subtitle has-text-white">
+Protegiendo la información frente a las computadoras cuánticas
+</h2>
+
+<a href="#concepto"
+class="button is-info is-large">
+Explorar
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONCEPTO -->
+
+<section id="concepto" class="section">
+
+<div class="container">
+
+<h2 class="title has-text-centered">
+¿Qué es?
+</h2>
+
+<div class="columns">
+
+<div class="column">
+
+<div class="card hover-card">
+
+<div class="card-content">
+
+<p class="title is-4">
+Seguridad del Futuro
+</p>
+
+<p>
+La criptografía post-cuántica es un conjunto de algoritmos diseñados para resistir ataques de computadoras cuánticas que podrían romper RSA y ECC mediante el algoritmo de Shor.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="column">
+
+<div class="card hover-card">
+
+<div class="card-content">
+
+<p class="title is-4">
+Objetivo
+</p>
+
+<p>
+Garantizar la confidencialidad y autenticidad de la información incluso cuando existan computadoras cuánticas suficientemente avanzadas.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section class="section has-background-light">
+
+<div class="container">
+
+<h2 class="title has-text-centered">
+Tecnologías Relacionadas
+</h2>
+
+<div class="columns">
+
+<div class="column">
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+class="gallery">
+</div>
+
+<div class="column">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+class="gallery">
+</div>
+
+<div class="column">
+<img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935"
+class="gallery">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ALGORITMOS -->
+
+<section id="algoritmos" class="section">
+
+<div class="container">
+
+<h2 class="title has-text-centered">
+Estándares NIST
+</h2>
+
+<div class="columns">
+
+<div class="column">
+<div class="card hover-card">
+<div class="card-content">
+
+<h3 class="title is-4">
+ML-KEM
+</h3>
+
+<p>
+Basado en Kyber.
+Intercambio seguro de claves.
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card hover-card">
+<div class="card-content">
+
+<h3 class="title is-4">
+ML-DSA
+</h3>
+
+<p>
+Basado en Dilithium.
+Firmas digitales resistentes a ataques cuánticos.
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card hover-card">
+<div class="card-content">
+
+<h3 class="title is-4">
+SLH-DSA
+</h3>
+
+<p>
+Basado en SPHINCS+.
+Sistema de firmas basado en funciones hash.
+</p>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HISTORIA -->
+
+<section id="historia" class="section has-background-info-light">
+
+<div class="container">
+
+<h2 class="title has-text-centered">
+Línea de Tiempo
+</h2>
+
+<div class="content">
+
+<ul>
+<li><strong>1994:</strong> Peter Shor desarrolla el algoritmo de Shor.</li>
+<li><strong>2016:</strong> NIST inicia la competencia PQC.</li>
+<li><strong>2022:</strong> Selección de Kyber, Dilithium y SPHINCS+.</li>
+<li><strong>2024:</strong> Publicación de FIPS 203, 204 y 205.</li>
+<li><strong>Futuro:</strong> Migración global a estándares post-cuánticos.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FUENTES -->
+
+<section id="fuentes" class="section">
+
+<div class="container">
+
+<h2 class="title has-text-centered">
+Bibliografía
+</h2>
+
+<div class="box">
+
+<ul>
+<li>https://www.nist.gov/pqcrypto</li>
+
+<li>https://csrc.nist.gov/pubs/fips/203/final</li>
+
+<li>https://csrc.nist.gov/pubs/fips/204/final</li>
+
+<li>https://csrc.nist.gov/pubs/fips/205/final</li>
+
+<li>https://www.ibm.com/quantum</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="content has-text-centered">
+
+<p>
+Proyecto académico sobre Criptografía Post-Cuántica
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
